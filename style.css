@@ -1,0 +1,242 @@
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .left-card {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+    padding: 10px 30px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) );
+    padding: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .result {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0px;
+  }
+
+  .total {
+    margin: 0px;
+  }
+
+  .left-card h2 {
+    margin-bottom: 0px;
+    font-weight: 800;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .right-card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -10px;
+  }
+
+  .summary-icons {
+    margin-right: 10px;
+    width: 15px;
+  }
+
+  .summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .item-block {
+    display: flex;
+  }
+
+  .item-value {
+    margin-left: auto;
+  }
+
+  .value-end {
+    color: hsl(227, 11%, 69%);
+  }
+
+  .reaction {
+    background-color: hsla(0, 100%, 67%, 0.075);
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  .reaction-text {
+    color: hsl(0, 100%, 67%);
+  }
+
+  .memory {
+    background-color: hsla(39, 100%, 56%, 0.075);
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  .memory-text {
+    color: hsl(39, 100%, 56%);
+  }
+
+  .verbal {
+    background-color: hsla(166, 100%, 37%, 0.075);
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  .verbal-text {
+    color: hsl(166, 100%, 37%);
+  }
+
+  .visual {
+    background-color: hsla(234, 85%, 45%, 0.075);
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  .visual-text {
+    color: hsl(234, 85%, 45%);
+  }
+
+  .button {
+    background-color: hsl(224, 30%, 27%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  .button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+
+  @media (max-width: 650px) {
+
+    body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0px;
+      border: 0px;
+      box-shadow: none;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .left-card {
+    color: hsl(0, 0%, 100%);
+    border: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 0px;
+  }
+
+  .right-card {
+    margin: 0px;
+    border-radius: 20px;
+    padding-top: 5px;
+  }
+
+  .left-card h2 {
+    margin-bottom: 0px;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 16px;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .summary-icons {
+    margin-right: 10px;
+    width: 18px;
+  }
+
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    padding: 16px;
+}
+    
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
