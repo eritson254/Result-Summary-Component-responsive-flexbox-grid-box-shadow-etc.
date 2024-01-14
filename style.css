@@ -6,6 +6,11 @@ body {
     margin-left: 0px;
   }
 
+a {
+    text-decoraton: none;
+    color: inherit;
+}
+
   .main {
     display: flex;
     justify-content: center;
